@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="urboirad.xyz.scje.setupcleanerje.HelloController" spacing="10" style="-fx-background-color: black; -fx-padding: 10;">
+    <Label text="Setup Cleaner JE" style="-fx-text-fill: white; -fx-font-size: 18;" />
+
+    <Button fx:id="fileDirButton" text="Select File Directory" onAction="#onSelectFileDir" />
+
+    <Label fx:id="fileDirLabel" text="No directory selected" style="-fx-text-fill: white;" />
+
+    <Label text="Select File Extension" style="-fx-text-fill: white;" />
+    <ComboBox fx:id="extSelectBox" onAction="#onSelectExtension" />
+
+    <Button text="Refresh List" onAction="#onRefreshFileList" />
+    <Button text="Delete Selected Files" onAction="#onDeleteSelectedFiles" />
+
+    <Label text="Select Date Range:" style="-fx-text-fill: white;" />
+    <Slider fx:id="dateSlider" min="0" max="365" value="365" onMouseReleased="#onRefreshFileList" />
+
+    <Label fx:id="fileListLabel" style="-fx-text-fill: white;" wrapText="true" />
+    <Label fx:id="sizeLabel" text="Combined Size: 0 MB" style="-fx-text-fill: white;" />
+
+    <ImageView fx:id="logoImage" fitWidth="180" fitHeight="90" preserveRatio="true" />
+</VBox>
