@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 
 <VBox xmlns:fx="http://javafx.com/fxml" fx:controller="urboirad.xyz.scje.setupcleanerje.HelloController" spacing="10" style="-fx-background-color: black; -fx-padding: 10;">
-    <Label text="Setup Cleaner JE" style="-fx-text-fill: white; -fx-font-size: 18;" />
+    <Label text="Setup Cleaner Java Edition" style="-fx-text-fill: white; -fx-font-size: 18;" />
 
     <Button fx:id="fileDirButton" text="Select File Directory" onAction="#onSelectFileDir" />
 

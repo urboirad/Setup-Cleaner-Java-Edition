@@ -6,6 +6,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.DirectoryChooser;
 
+import javax.swing.*;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -33,14 +34,13 @@ public class HelloController {
 
     @FXML
     public void initialize() {
-        // Populate the combo box
         extSelectBox.getItems().addAll("Installation/Setup Files", ".zip", ".rar", ".png", ".jpg", ".jpeg", ".gif",
                 ".bmp", ".tiff", ".tif", ".webp", ".mp4", ".mkv", ".avi", ".mov", ".wmv", ".flv", ".webm",
                 ".mp3", ".wav", ".flac", ".ogg", ".wma", ".aac", ".m4a", ".opus", ".pdf", ".docx", ".doc",
                 ".xlsx", ".xls", ".pptx", ".ppt", ".txt", ".html", ".css", ".js");
 
         // Logo
-        Image logo = new Image(HelloController.class.getResource("scpLogo.png").toString());
+        Image logo = new Image(HelloController.class.getResource("scje_logo.png").toString());
         logoImage.setImage(logo);
     }
 
@@ -105,7 +105,7 @@ public class HelloController {
             return;
         }
 
-        // Filter files based on extensions
+        // Filter
         File[] files = currentDirectory.listFiles(file -> {
             for (String ext : selectedExtensions) {
                 if (file.getName().toLowerCase().endsWith(ext.toLowerCase())) {
