@@ -1,7 +1,7 @@
 <img src="https://i.ibb.co/nrrYtQM/scje-logo.png">
 
 ## Introduction
-**Setup Cleaner JE** is a JavaFX-based application designed to help users easily manage and clean up their file directories by filtering and deleting specific file types (e.g., setup files, archives, images, etc.). With an intuitive graphical user interface, users can select a folder, choose extensions, and quickly review or delete unwanted files.
+**SetupCleaner JE** is a JavaFX-based application designed to help users easily manage and clean up their file directories by filtering and deleting specific file types (e.g., setup files, archives, images, etc.). With an intuitive graphical user interface, users can select a folder, choose extensions, and quickly review or delete unwanted files.
 
 ---
 
